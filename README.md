@@ -38,20 +38,20 @@ Click on "Analyze a new project," select your repository, and set up the configu
 In the SonarCloud dashboard, select the analysis method - choose "with GitHub Action."
 
 
-![build](images/build.png)
+![build](images/github-action.png)
 
 Copy the Sonar token provided.
 
 ### 3. Configure GitHub Secrets
 Go to your GitHub repository and navigate to `Settings > Secrets > Actions`. Create two keys: `SONAR_TOKEN` and `GITHUB_TOKEN`. Paste the Sonar token and GitHub secret token, respectively.
 
-![github-action](images/github-action.png)
+![github-keys](images/setup-githuv-key.png)
 
 
 ### 4. Create GitHub Workflow
 Create a GitHub Actions workflow file named `.github/workflows/build.yml` in your project. Copy the code provided by SonarCloud for Python.
 
-![github-action](images/github-action.png)
+![github-yaml](images/build.png)
 
 ### 5. Create Sonar Project Properties File
 Create a `sonar-project.properties` file in the project root and paste the code provided by SonarCloud.
